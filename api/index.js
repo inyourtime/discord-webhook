@@ -1,13 +1,10 @@
 "use strict";
 
-import fastify from "fastify";
+import Fastify from "fastify";
 
-const app = fastify();
+const app = Fastify({ logger: true });
 
-app.get("/", async (request, reply) => {
-  console.log("Hello World!");
-  return "Hello World!";
-});
+app.register(import("../src/webhook.js"));
 
 export default async (req, res) => {
   await app.ready();
