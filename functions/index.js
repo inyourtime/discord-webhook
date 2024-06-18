@@ -3,6 +3,7 @@ const fastify = require("fastify");
 const app = fastify();
 
 app.get("/", async (request, reply) => {
+  console.log("Hello World!");
   return "Hello World!";
 });
 
