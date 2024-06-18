@@ -1,0 +1,22 @@
+﻿node_modules
+configs
+yarn.lock
+*.sh
+.DS_Store
+dist
+*.log
+# package-lock.json
+yarn-error.log
+src/utils/allAboutGitVersion.json
+*.http
+src/generator/rolePermission/RolePermission.json
+src/generator/rolePermission/preData.xlsx
+src/utils/fastify-JH
+
+.env
+
+*.csv
+*.xlsx
+
+temp
+.vercel
